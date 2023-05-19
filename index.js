@@ -8,7 +8,8 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  tipranksApi.getPriceTargets("aapl").then((result) => res.json(result));
+  res.send("Hellos");
+  // tipranksApi.getPriceTargets("aapl").then((result) => res.json(result));
 });
 
 app.listen(port, () => {
